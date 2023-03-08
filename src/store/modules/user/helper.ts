@@ -1,5 +1,7 @@
 import { ss } from '@/utils/storage'
 
+import UserAvatarImg from '@/assets/user-avatar.png'
+
 const LOCAL_NAME = 'userStorage'
 
 export interface UserInfo {
@@ -15,9 +17,9 @@ export interface UserState {
 export function defaultSetting(): UserState {
   return {
     userInfo: {
-      avatar: 'https://raw.githubusercontent.com/Chanzhaoyu/chatgpt-web/main/src/assets/avatar.jpg',
-      name: 'ChenZhaoYu',
-      description: 'Star on <a href="https://github.com/Chanzhaoyu/chatgpt-bot" class="text-blue-500" target="_blank" >Github</a>',
+      avatar: UserAvatarImg,
+      name: 'Insentek',
+      description: '智感小助手',
     },
   }
 }
