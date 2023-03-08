@@ -1,1 +1,1 @@
-# lictor-s
+# lictor
