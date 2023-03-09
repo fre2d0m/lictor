@@ -2,7 +2,6 @@
 
 - [ChatGPT Web](#chatgpt-web)
 	- [介绍](#介绍)
-	- [待实现路线](#待实现路线)
 	- [前置要求](#前置要求)
 		- [Node](#node)
 		- [PNPM](#pnpm)
@@ -64,25 +63,6 @@ API_REVERSE_PROXY=
 ```
 /service/.env
 ```
-
-## 待实现路线
-[✓] 双模型
-
-[✓] 多会话储存和上下文逻辑
-
-[✓] 对代码等消息类型的格式化美化处理
-
-[✓] 访问权限控制
-
-[✓] 数据导入、导出
-
-[✓] 保存消息到本地图片
-
-[✓] 界面多语言
-
-[✓] 界面主题
-
-[✗] More...
 
 ## 前置要求
 
@@ -160,8 +140,6 @@ pnpm dev
 - `TIMEOUT_MS` 超时，单位毫秒，可选
 - `SOCKS_PROXY_HOST` 可选，和 SOCKS_PROXY_PORT 一起时生效
 - `SOCKS_PROXY_PORT` 可选，和 SOCKS_PROXY_HOST 一起时生效
-
-![docker](./docs/docker.png)
 
 #### Docker build & Run
 
