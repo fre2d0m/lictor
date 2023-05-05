@@ -1,46 +1,64 @@
-# 贡献指南
-感谢你的宝贵时间。你的贡献将使这个项目变得更好！在提交贡献之前，请务必花点时间阅读下面的入门指南。
+# Contributing to Lictor
 
-## 语义化版本
-该项目遵循语义化版本。我们对重要的漏洞修复发布修订号，对新特性或不重要的变更发布次版本号，对重大且不兼容的变更发布主版本号。
+Thank you for your interest in contributing to Lictor! We appreciate your help and support. This document
+outlines the guidelines and best practices for contributing to this project.
 
-每个重大更改都将记录在 `changelog` 中。
+## Code of Conduct
 
-## 提交 Pull Request
-1. 从 `main` 创建分支。新功能实现请发 pull request 到 `feature` 分支。其他更改发到 `main` 分支。
-2. 使用 `npm install pnpm -g` 安装 `pnpm` 工具。
-3. `vscode` 安装了 `Eslint` 插件，其它编辑器如 `webStorm` 打开了 `eslint` 功能。
-4. 根目录下执行 `pnpm bootstrap`。
-5. `/service/` 目录下执行 `pnpm install`。
-6. 对代码库进行更改。如果适用的话，请确保进行了相应的测试。
-7. 请在根目录下执行 `pnpm lint:fix` 进行代码格式检查。
-8. 请在根目录下执行 `pnpm type-check` 进行类型检查。
-9. 提交 git commit, 请同时遵守 [Commit 规范](#commit-指南)
-10. 提交 `pull request`， 如果有对应的 `issue`，请进行[关联](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)。
+Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to ensure a positive, inclusive, and welcoming
+environment for everyone.
 
-## Commit 指南
+## How to Contribute
 
-Commit messages 请遵循[conventional-changelog 标准](https://www.conventionalcommits.org/en/v1.0.0/)：
+There are many ways to contribute to this project:
 
-```bash
-<类型>[可选 范围]: <描述>
+- Report bugs or request features by [opening an issue](https://github.com/insentek/lictor/issues/new).
+- Improve existing code, documentation, or tests.
+- Add new features or enhancements.
 
-[可选 正文]
+### Reporting Bugs or Requesting Features
 
-[可选 脚注]
-```
+Before submitting a bug report or feature request, please check
+the [issue tracker](https://github.com/insentek/lictor/issues) to see if your issue has already been reported or is
+being worked on. If it doesn't already exist, create a new issue with a clear title and description, following the
+provided issue templates.
 
-### Commit 类型
+### Contributing Code
 
-以下是 commit 类型列表:
+To contribute code, follow these steps:
 
-- feat: 新特性或功能
-- fix: 缺陷修复
-- docs: 文档更新
-- style: 代码风格或者组件样式更新
-- refactor: 代码重构，不引入新功能和缺陷修复
-- perf: 性能优化
-- test: 单元测试
-- chore: 其他不修改 src 或测试文件的提交
+1. Fork the repository and create your branch from the `main` branch.
+2. If you've added code, make sure to add appropriate tests.
+3. Ensure that the test suite passes by running `npm test`.
+4. Follow the coding style enforced by the project, including ESLint and Prettier configurations.
+5. Commit your changes with a clear, concise, and descriptive commit message, following the conventional commit format.
+6. Push your branch to your fork on GitHub.
+7. Create a pull request against the `main` branch of the original repository.
 
+### Pull Request Process
 
+Once you've submitted a pull request, the project maintainers will review your changes. They may ask for changes or
+improvements before merging your changes. Be patient and responsive to feedback, and be prepared to make updates to your
+pull request if necessary.
+
+## Development Setup
+
+To set up your local development environment, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Run `npm install` to install the project's dependencies.
+3. Run `npm run dev` to start the development server. Open your browser and navigate to `http://localhost:3000` to view
+   the app.
+4. Make your changes, and test them locally.
+5. Run `npm test` to ensure that all tests pass before submitting your changes.
+
+## Coding Style
+
+This project uses ESLint and Prettier to enforce consistent coding style. Please ensure that your changes adhere to the
+provided configurations. You can check your code by running `npm run lint`, and you can automatically fix most issues by
+running `npm run lint:fix`.
+
+## License
+
+By contributing to this project, you agree that your contributions will be licensed under the
+project's [LICENSE](LICENSE) file.

@@ -1,234 +1,61 @@
-# ChatGPT Web
+# Lictor
+Lictor is a chatbot web application for teams to use and collaborate. It not only helps the team to prompt their expert system (based on Prompts), but also allows them to perform different events through the handler, built on the OpenAI API
 
-- [ChatGPT Web](#chatgpt-web)
-	- [介绍](#介绍)
-	- [前置要求](#前置要求)
-		- [Node](#node)
-		- [PNPM](#pnpm)
-		- [填写密钥](#填写密钥)
-	- [安装依赖](#安装依赖)
-		- [后端](#后端)
-		- [前端](#前端)
-	- [测试环境运行](#测试环境运行)
-		- [后端服务](#后端服务)
-		- [前端网页](#前端网页)
-	- [打包](#打包)
-		- [使用 Docker](#使用-docker)
-			- [Docker 参数示例](#docker-参数示例)
-			- [Docker build \& Run](#docker-build--run)
-			- [Docker compose](#docker-compose)
-		- [使用 Railway 部署](#使用-railway-部署)
-			- [Railway 环境变量](#railway-环境变量)
-		- [手动打包](#手动打包)
-			- [后端服务](#后端服务-1)
-			- [前端网页](#前端网页-1)
-	- [常见问题](#常见问题)
-	- [参与贡献](#参与贡献)
-	- [赞助](#赞助)
-	- [License](#license)
-## 介绍
+## Description
+A brief and informative paragraph about the project, its purpose, functionality and benefits.
 
-支持双模型，提供了两种非官方 `ChatGPT API` 方法
+## Features
 
-| 方式                                          | 免费？ | 可靠性     | 质量 |
-| --------------------------------------------- | ------ | ---------- | ---- |
-| `ChatGPTAPI(gpt-3.5-turbo-0301)`                           | 否     | 可靠       | 相对较笨 |
-| `ChatGPTUnofficialProxyAPI(网页 accessToken)` | 是     | 相对不可靠 | 聪明 |
+- Feature 1: A short description of the first feature.
+- Feature 2: A short description of the second feature.
+- Feature 3: A short description of the third feature.
 
-对比：
-1. `ChatGPTAPI` 使用 `gpt-3.5-turbo-0301` 通过官方`OpenAI`补全`API`模拟`ChatGPT`（最稳健的方法，但它不是免费的，并且没有使用针对聊天进行微调的模型）
-2. `ChatGPTUnofficialProxyAPI` 使用非官方代理服务器访问 `ChatGPT` 的后端`API`，绕过`Cloudflare`（使用真实的的`ChatGPT`，非常轻量级，但依赖于第三方服务器，并且有速率限制）
 
-[查看详情](https://github.com/Chanzhaoyu/chatgpt-web/issues/138)
+## Table of Contents
 
-切换方式：
-1. 进入 `service/.env` 文件
-2. 使用 `OpenAI API Key` 请填写 `OPENAI_API_KEY` 字段 [(获取 apiKey)](https://platform.openai.com/overview)
-3. 使用 `Web API` 请填写 `OPENAI_ACCESS_TOKEN` 字段 [(获取 accessToken)](https://chat.openai.com/api/auth/session)
-4. 同时存在时以 `OpenAI API Key` 优先
+- Installation
+- Usage
+- Contributing
+- License
+- Code of Conduct
+- Support
+- Roadmap
+- Acknowledgements
 
-反向代理：
+## Installation
+Provide detailed instructions on how to install the project on various platforms and environments.
+## Prerequisites
+List any software or libraries that need to be installed before running the project.
+## Installing
+Step-by-step instructions on how to install your project. Provide examples for different platforms or package managers.
+## Usage
+Detailed instructions on how to use your project. Include code examples, screenshots or animated GIFs to demonstrate functionality.
+## Configuration
+Explain any configuration options or environment variables required for the project.
+## Running the tests
+Explain how to run the automated tests for the project.
+## Deployment
+Provide instructions on how to deploy the project to a live system.
+## Contributing
+Explain how interested developers can contribute to your project. Include:
 
-`ChatGPTUnofficialProxyAPI`时可用，[详情](https://github.com/transitive-bullshit/chatgpt-api#reverse-proxy)
+- Guidelines for submitting pull requests
+- Coding style and conventions
+- Instructions for setting up the development environment
 
-```shell
-# service/.env
-API_REVERSE_PROXY=
-```
+## License
+Include the license for your project (e.g. MIT, GPL, etc.)
+## Code of Conduct
+Include a link to your project's Code of Conduct.
+## Support
+Provide information on how to get support or assistance with your project. Include:
 
-环境变量：
+- Contact information (email, social media, etc.)
+- Bug reporting instructions
+- Feature request instructions
 
-全部参数变量请查看或[这里](#docker-参数示例)
+## Roadmap
+Outline future features, improvements and updates planned for your project.
 
-```
-/service/.env
-```
-
-## 前置要求
-
-### Node
-
-`node` 需要 `^16 || ^18` 版本（`node >= 14` 需要安装 [fetch polyfill](https://github.com/developit/unfetch#usage-as-a-polyfill)），使用 [nvm](https://github.com/nvm-sh/nvm) 可管理本地多个 `node` 版本
-
-```shell
-node -v
-```
-
-### PNPM
-如果你没有安装过 `pnpm`
-```shell
-npm install pnpm -g
-```
-
-### 填写密钥
-获取 `Openai Api Key` 或 `accessToken` 并填写本地环境变量 [跳转](#介绍)
-
-```
-# service/.env 文件
-
-# OpenAI API Key - https://platform.openai.com/overview
-OPENAI_API_KEY=
-
-# change this to an `accessToken` extracted from the ChatGPT site's `https://chat.openai.com/api/auth/session` response
-OPENAI_ACCESS_TOKEN=
-```
-
-## 安装依赖
-
-> 为了简便 `后端开发人员` 的了解负担，所以并没有采用前端 `workspace` 模式，而是分文件夹存放。如果只需要前端页面做二次开发，删除 `service` 文件夹即可。
-
-### 后端
-
-进入文件夹 `/service` 运行以下命令
-
-```shell
-pnpm install
-```
-
-### 前端
-根目录下运行以下命令
-```shell
-pnpm bootstrap
-```
-
-## 测试环境运行
-### 后端服务
-
-进入文件夹 `/service` 运行以下命令
-
-```shell
-pnpm start
-```
-
-### 前端网页
-根目录下运行以下命令
-```shell
-pnpm dev
-```
-
-## 打包
-
-### 使用 Docker
-
-#### Docker 参数示例
-
-- `OPENAI_API_KEY` 二选一
-- `OPENAI_ACCESS_TOKEN`  二选一，同时存在时，`OPENAI_API_KEY` 优先
-- `OPENAI_API_BASE_URL`  可选，设置 `OPENAI_API_KEY` 时可用
-- `API_REVERSE_PROXY` 可选，设置 `OPENAI_ACCESS_TOKEN` 时可用 [参考](#介绍)
-- `AUTH_SECRET_KEY` 访问权限密钥，可选
-- `TIMEOUT_MS` 超时，单位毫秒，可选
-- `SOCKS_PROXY_HOST` 可选，和 SOCKS_PROXY_PORT 一起时生效
-- `SOCKS_PROXY_PORT` 可选，和 SOCKS_PROXY_HOST 一起时生效
-
-#### Docker build & Run
-
-```bash
-docker build -t chatgpt-web .
-
-# 前台运行
-docker run --name chatgpt-web --rm -it -p 3002:3002 --env OPENAI_API_KEY=your_api_key chatgpt-web
-
-# 后台运行
-docker run --name chatgpt-web -d -p 3002:3002 --env OPENAI_API_KEY=your_api_key chatgpt-web
-
-# 运行地址
-http://localhost:3002/
-```
-```yml
-version: '3'
-
-services:
-  app:
-    image: chenzhaoyu94/chatgpt-web # 总是使用 latest ,更新时重新 pull 该 tag 镜像即可
-    ports:
-      - 3002:3002
-    environment:
-      # 二选一
-      OPENAI_API_KEY: xxxxxx
-      # 二选一
-      OPENAI_ACCESS_TOKEN: xxxxxx
-      # API接口地址，可选，设置 OPENAI_API_KEY 时可用
-      OPENAI_API_BASE_URL: xxxx
-      # 反向代理，可选
-      API_REVERSE_PROXY: xxx
-      # 访问权限密钥，可选
-      AUTH_SECRET_KEY: xxx
-      # 超时，单位毫秒，可选
-      TIMEOUT_MS: 60000
-      # Socks代理，可选，和 SOCKS_PROXY_PORT 一起时生效
-      SOCKS_PROXY_HOST: xxxx
-      # Socks代理端口，可选，和 SOCKS_PROXY_HOST 一起时生效
-      SOCKS_PROXY_PORT: xxxx
-```
-- `OPENAI_API_BASE_URL`  可选，设置 `OPENAI_API_KEY` 时可用
-###  使用 Railway 部署
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/yytmgc)
-
-#### Railway 环境变量
-
-| 环境变量名称          | 必填                   | 备注                                                                                               |
-| --------------------- | ---------------------- | -------------------------------------------------------------------------------------------------- |
-| `PORT`                | 必填                   | 默认 `3002`
-| `AUTH_SECRET_KEY`          | 可选                   | 访问权限密钥                                        |
-| `TIMEOUT_MS`          | 可选                   | 超时时间，单位毫秒                                                                             |
-| `OPENAI_API_KEY`      | `OpenAI API` 二选一    | 使用 `OpenAI API` 所需的 `apiKey` [(获取 apiKey)](https://platform.openai.com/overview)            |
-| `OPENAI_ACCESS_TOKEN` | `Web API` 二选一       | 使用 `Web API` 所需的 `accessToken` [(获取 accessToken)](https://chat.openai.com/api/auth/session) |
-| `OPENAI_API_BASE_URL`   | 可选，`OpenAI API` 时可用 |  `API`接口地址  |
-| `API_REVERSE_PROXY`   | 可选，`Web API` 时可用 | `Web API` 反向代理地址 [详情](https://github.com/transitive-bullshit/chatgpt-api#reverse-proxy)    |
-| `SOCKS_PROXY_HOST`   | 可选，和 `SOCKS_PROXY_PORT` 一起时生效 | Socks代理    |
-| `SOCKS_PROXY_PORT`   | 可选，和 `SOCKS_PROXY_HOST` 一起时生效 | Socks代理端口    |
-
-> 注意: `Railway` 修改环境变量会重新 `Deploy`
-
-### 手动打包
-#### 后端服务
-> 如果你不需要本项目的 `node` 接口，可以省略如下操作
-
-复制 `service` 文件夹到你有 `node` 服务环境的服务器上。
-
-```shell
-# 安装
-pnpm install
-
-# 打包
-pnpm build
-
-# 运行
-pnpm prod
-```
-
-PS: 不进行打包，直接在服务器上运行 `pnpm start` 也可
-
-#### 前端网页
-
-1、修改根目录下 `.env` 内 `VITE_APP_API_BASE_URL` 为你的实际后端接口地址
-
-2、根目录下运行以下命令，然后将 `dist` 文件夹内的文件复制到你网站服务的根目录下
-
-[参考信息](https://cn.vitejs.dev/guide/static-deploy.html#building-the-app)
-
-```shell
-pnpm build
-```
+## Acknowledgements
+Give credit to any individuals, projects, or organizations that have contributed to the project.

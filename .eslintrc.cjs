@@ -1,4 +1,3 @@
 module.exports = {
-  root: true,
-  extends: ['@antfu'],
-}
+    'extends': 'next/core-web-vitals',
+};
