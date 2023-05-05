@@ -22,20 +22,29 @@ A brief and informative paragraph about the project, its purpose, functionality 
 - Roadmap
 - Acknowledgements
 
-## Installation
+## QuickStart
+
+### Deploy
+
+**Vercel**
+
+Host your own live version with Vercel.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/insentek/lictor)
+
+
+
+**Docker**
+
 Provide detailed instructions on how to install the project on various platforms and environments.
-## Prerequisites
-List any software or libraries that need to be installed before running the project.
-## Installing
-Step-by-step instructions on how to install your project. Provide examples for different platforms or package managers.
+
+### Running Locally
+
 ## Usage
 Detailed instructions on how to use your project. Include code examples, screenshots or animated GIFs to demonstrate functionality.
 ## Configuration
 Explain any configuration options or environment variables required for the project.
-## Running the tests
-Explain how to run the automated tests for the project.
-## Deployment
-Provide instructions on how to deploy the project to a live system.
+
 ## Contributing
 Explain how interested developers can contribute to your project. Include:
 
@@ -57,5 +66,12 @@ Provide information on how to get support or assistance with your project. Inclu
 ## Roadmap
 Outline future features, improvements and updates planned for your project.
 
+## Donation
+[Buy Me a Coffee](https://buymeacoffee.com/insentekrd)
+
 ## Acknowledgements
-Give credit to any individuals, projects, or organizations that have contributed to the project.
+
+### Sponsor
+
+### Contributor
+[Contributors](https://github.com/insentek/lictor/graphs/contributors)
