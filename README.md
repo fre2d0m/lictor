@@ -10,17 +10,12 @@ A brief and informative paragraph about the project, its purpose, functionality 
 - Feature 2: A short description of the second feature.
 - Feature 3: A short description of the third feature.
 
+## Roadmap
+Outline future features, improvements and updates planned for your project.
 
-## Table of Contents
+## What's New
 
-- Installation
-- Usage
-- Contributing
-- License
-- Code of Conduct
-- Support
-- Roadmap
-- Acknowledgements
+Nothing in here yet.
 
 ## QuickStart
 
@@ -63,8 +58,6 @@ Provide information on how to get support or assistance with your project. Inclu
 - Bug reporting instructions
 - Feature request instructions
 
-## Roadmap
-Outline future features, improvements and updates planned for your project.
 
 ## Donation
 [Buy Me a Coffee](https://buymeacoffee.com/insentekrd)

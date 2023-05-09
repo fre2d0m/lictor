@@ -1,33 +1,16 @@
 {
-    "name": "lictor",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "lint:fix": "eslint --ext .js,.jsx --ignore-path .gitignore . --fix"
-    },
-    "dependencies": {
-        "@types/node": "18.16.3",
-        "@types/react": "18.2.5",
-        "@types/react-dom": "18.2.3",
-        "autoprefixer": "10.4.14",
-        "next": "13.4.0",
-        "postcss": "8.4.23",
-        "react": "18.2.0",
-        "react-dom": "18.2.0",
-        "tailwindcss": "3.3.2",
-        "typescript": "5.0.4"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^17.6.3",
-        "@commitlint/config-conventional": "^17.6.3",
-        "eslint": "8.39.0",
-        "eslint-config-next": "13.4.0",
-        "eslint-config-prettier": "^8.8.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "prettier": "^2.8.8"
-    }
+  "name": "lictor",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"wsrun --parallel start\""
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+      "concurrently": "^5.2.0",
+    "wsrun": "^5.2.0"
+  }
 }

@@ -19,7 +19,6 @@ coverage
 
 # Editor directories and files
 .vscode/*
-!.vscode/settings.json
 !.vscode/extensions.json
 .idea
 *.suo
@@ -27,9 +26,9 @@ coverage
 *.njsproj
 *.sln
 *.sw?
-
-
-.run/
-.next
-.cache
-.env
+.DS_Store
+*.un~
+.tsbuildinfo
+.tsbuildinfo.*
+npm-debug.log
+yarn-error.log
