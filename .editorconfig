@@ -9,3 +9,9 @@ insert_final_newline = false
 max_line_length = 120
 tab_width = 4
 trim_trailing_whitespace = true
+
+
+[{*.har,*.jsb2,*.jsb3,*.json,.babelrc,eslintrc,.prettierrc,.stylelintrc,package.*}]
+ij_json_indent_size = 4
+ij_json_tab_width = 4
+ij_json_continuation_indent_size = 4
