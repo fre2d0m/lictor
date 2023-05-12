@@ -13,13 +13,17 @@ import * as staticFile from '@midwayjs/static-file';
 import * as crossDomain from '@midwayjs/cross-domain';
 import * as ws from '@midwayjs/ws';
 import * as codeDye from '@midwayjs/code-dye';
+import * as redis from '@midwayjs/redis';
+import * as sequelize from '@midwayjs/sequelize';
 
 @Configuration({
     imports: [
         koa,
         validate,
         staticFile,
+        redis,
         crossDomain,
+        sequelize,
         ws,
         {
             component: info,
