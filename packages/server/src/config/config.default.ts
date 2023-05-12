@@ -32,20 +32,20 @@ export default {
     },
     redis: {
         client: {
-            port: 6379, // Redis port
-            host: '127.0.0.1', // Redis host
-            password: 'auth',
+            port: process.env.REDISPORT || 6379, // Redis port
+            host: process.env.REDISHOST || '127.0.0.1', // Redis host
+            password: process.env.REDISPASSWORD || 'auth',
             db: 0,
         },
     },
     sequelize: {
         dataSource: {
             default: {
-                database: 'test4',
-                username: 'root',
-                password: '123456',
-                host: '127.0.0.1',
-                port: 3306,
+                database: process.env.MYSQLDATABASE || 'lictor',
+                username: process.env.MYSQLUSER || 'root',
+                password: process.env.MYSQLPASSWORD || 'root',
+                host: process.env.MYSQLUSER || '127.0.0.1',
+                port: process.env.MYSQLPORT || 3306,
                 encrypt: false,
                 dialect: 'mysql',
                 define: { charset: 'utf8' },
