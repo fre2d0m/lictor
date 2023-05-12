@@ -94,6 +94,26 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
+"@ant-design/colors@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npmmirror.com/@ant-design/colors/-/colors-6.0.0.tgz#9b9366257cffcc47db42b9d0203bb592c13c0298"
+  integrity sha512-qAZRvPzfdWHtfameEGP2Qvuf838NhergR35o+EuVyB5XvSA98xod5r4utvi4TJ3ywmevm290g9nsCG5MryrdWQ==
+  dependencies:
+    "@ctrl/tinycolor" "^3.4.0"
+
+"@ant-design/icons-svg@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.npmmirror.com/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz#8630da8eb4471a4aabdaed7d1ff6a97dcb2cf05a"
+  integrity sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==
+
+"@ant-design/icons-vue@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.npmmirror.com/@ant-design/icons-vue/-/icons-vue-6.1.0.tgz#f9324fdc0eb4cea943cf626d2bf3db9a4ff4c074"
+  integrity sha512-EX6bYm56V+ZrKN7+3MT/ubDkvJ5rK/O2t380WFRflDcVFgsvl3NLH7Wxeau6R8DbrO5jWR6DSTC3B6gYFp77AA==
+  dependencies:
+    "@ant-design/colors" "^6.0.0"
+    "@ant-design/icons-svg" "^4.2.1"
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "http://npm.prdops.insentek.com:80/@babel%2fcode-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -416,7 +436,7 @@
     "@babel/helper-plugin-utils" "^7.20.2"
     "@babel/plugin-syntax-typescript" "^7.20.0"
 
-"@babel/runtime@^7.21.0":
+"@babel/runtime@^7.10.5", "@babel/runtime@^7.21.0":
   version "7.21.5"
   resolved "http://npm.prdops.insentek.com:80/@babel%2fruntime/-/runtime-7.21.5.tgz"
   integrity sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==
@@ -473,6 +493,11 @@
   integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
+
+"@ctrl/tinycolor@^3.4.0":
+  version "3.6.0"
+  resolved "https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.6.0.tgz#53fa5fe9c34faee89469e48f91d51a3766108bc8"
+  integrity sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==
 
 "@dabh/diagnostics@^2.0.2":
   version "2.0.3"
@@ -1277,6 +1302,14 @@
   resolved "http://npm.prdops.insentek.com:80/@sideway%2fpinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
+"@simonwep/pickr@~1.8.0":
+  version "1.8.2"
+  resolved "https://registry.npmmirror.com/@simonwep/pickr/-/pickr-1.8.2.tgz#96dc86675940d7cad63d69c22083dd1cbb9797cb"
+  integrity sha512-/l5w8BIkrpP6n1xsetx9MWPWlU6OblN5YgZZphxan0Tq4BByTCETL6lyIeY8lagalS2Nbt4F2W034KHLIiunKA==
+  dependencies:
+    core-js "^3.15.1"
+    nanopop "^2.1.0"
+
 "@sinclair/typebox@^0.25.16":
   version "0.25.24"
   resolved "http://npm.prdops.insentek.com:80/@sinclair%2ftypebox/-/typebox-0.25.24.tgz"
@@ -2068,6 +2101,29 @@ ansi-styles@^5.0.0:
   resolved "http://npm.prdops.insentek.com:80/ansi-styles/-/ansi-styles-5.2.0.tgz"
   integrity sha1-B0SWkK1Fd30ZJKwquy/IiV26g2s=
 
+ant-design-vue@^3.2.15:
+  version "3.2.20"
+  resolved "https://registry.npmmirror.com/ant-design-vue/-/ant-design-vue-3.2.20.tgz#552f5f08e2acbcc10bd4089145d4cc2b15d4cfec"
+  integrity sha512-YWpMfGaGoRastIXEYfCoJiaRiDHk4chqtYhlKQM5GqPt6NfvrM1Vg2e60yHtjxlZjed91wCMm0rAmyUr7Hwzdg==
+  dependencies:
+    "@ant-design/colors" "^6.0.0"
+    "@ant-design/icons-vue" "^6.1.0"
+    "@babel/runtime" "^7.10.5"
+    "@ctrl/tinycolor" "^3.4.0"
+    "@simonwep/pickr" "~1.8.0"
+    array-tree-filter "^2.1.0"
+    async-validator "^4.0.0"
+    dayjs "^1.10.5"
+    dom-align "^1.12.1"
+    dom-scroll-into-view "^2.0.0"
+    lodash "^4.17.21"
+    lodash-es "^4.17.15"
+    resize-observer-polyfill "^1.5.1"
+    scroll-into-view-if-needed "^2.2.25"
+    shallow-equal "^1.0.0"
+    vue-types "^3.0.0"
+    warning "^4.0.0"
+
 any-promise@^1.0.0:
   version "1.3.0"
   resolved "http://npm.prdops.insentek.com:80/any-promise/-/any-promise-1.3.0.tgz#abc6afeedcea52e809cdc0376aed3ce39635d17f"
@@ -2098,6 +2154,11 @@ argparse@^2.0.1:
   resolved "http://npm.prdops.insentek.com:80/argparse/-/argparse-2.0.1.tgz"
   integrity sha1-JG9Q88p4oyQPbJl+ipvR6sSeSzg=
 
+array-tree-filter@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/array-tree-filter/-/array-tree-filter-2.1.0.tgz#873ac00fec83749f255ac8dd083814b4f6329190"
+  integrity sha512-4ROwICNlNw/Hqa9v+rk5h22KjmzB1JGTMVKP2AKJBOCgb0yL0ASf0+YvCcLNNwquOHNX48jkeZIJ3a+oOQqKcw==
+
 array-union@^2.1.0:
   version "2.1.0"
   resolved "http://npm.prdops.insentek.com:80/array-union/-/array-union-2.1.0.tgz"
@@ -2122,6 +2183,11 @@ astral-regex@^2.0.0:
   version "2.0.0"
   resolved "http://npm.prdops.insentek.com:80/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha1-SDFDxWeu7UeFdZwIZXhtx319LjE=
+
+async-validator@^4.0.0:
+  version "4.2.5"
+  resolved "https://registry.npmmirror.com/async-validator/-/async-validator-4.2.5.tgz#c96ea3332a521699d0afaaceed510a54656c6339"
+  integrity sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==
 
 async@^3.2.3:
   version "3.2.4"
@@ -2577,6 +2643,11 @@ compressible@^2.0.6:
   dependencies:
     mime-db ">= 1.43.0 < 2"
 
+compute-scroll-into-view@^1.0.20:
+  version "1.0.20"
+  resolved "https://registry.npmmirror.com/compute-scroll-into-view/-/compute-scroll-into-view-1.0.20.tgz#1768b5522d1172754f5d0c9b02de3af6be506a43"
+  integrity sha512-UCB0ioiyj8CRjtrvaceBLqqhZCVP+1B8+NWQhmdsm0VXOJtobBCf1dBQmebCCo34qZmUwZfIH2MZLqNHazrfjg==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "http://npm.prdops.insentek.com:80/concat-map/-/concat-map-0.0.1.tgz"
@@ -2666,10 +2737,22 @@ cookies@~0.8.0:
     depd "~2.0.0"
     keygrip "~1.1.0"
 
+copy-anything@^2.0.1:
+  version "2.0.6"
+  resolved "https://registry.npmmirror.com/copy-anything/-/copy-anything-2.0.6.tgz#092454ea9584a7b7ad5573062b2a87f5900fc480"
+  integrity sha512-1j20GZTsvKNkc4BY3NpMOM8tt///wY3FpIzozTOFO2ffuZcV61nojHXVKIy3WM+7ADCy5FVhdZYHYDdgTU0yJw==
+  dependencies:
+    is-what "^3.14.1"
+
 copy-to@^2.0.1:
   version "2.0.1"
   resolved "http://npm.prdops.insentek.com:80/copy-to/-/copy-to-2.0.1.tgz"
   integrity sha1-JoD7uAaKSNCGVrYJgJK9r8kG9KU=
+
+core-js@^3.15.1:
+  version "3.30.2"
+  resolved "https://registry.npmmirror.com/core-js/-/core-js-3.30.2.tgz#6528abfda65e5ad728143ea23f7a14f0dcf503fc"
+  integrity sha512-uBJiDmwqsbJCWHAwjrx3cvjbMXP7xD72Dmsn5LOJpiRmE3WbBbN5rCqQ2Qh6Ek6/eOrjlWngEynBWo4VxerQhg==
 
 create-require@^1.1.0:
   version "1.1.1"
@@ -2753,7 +2836,7 @@ date-time@^3.1.0:
   dependencies:
     time-zone "^1.0.0"
 
-dayjs@^1.10.7:
+dayjs@^1.10.5, dayjs@^1.10.7:
   version "1.11.7"
   resolved "http://npm.prdops.insentek.com:80/dayjs/-/dayjs-1.11.7.tgz"
   integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
@@ -2765,7 +2848,7 @@ debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
   dependencies:
     ms "2.1.2"
 
-debug@^3.1.0:
+debug@^3.1.0, debug@^3.2.6:
   version "3.2.7"
   resolved "http://npm.prdops.insentek.com:80/debug/-/debug-3.2.7.tgz#72580b7e9145fb39b6676f9c5e5fb100b934179a"
   integrity sha1-clgLfpFF+zm2Z2+cXl+xALk0F5o=
@@ -2904,6 +2987,16 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+dom-align@^1.12.1:
+  version "1.12.4"
+  resolved "https://registry.npmmirror.com/dom-align/-/dom-align-1.12.4.tgz#3503992eb2a7cfcb2ed3b2a6d21e0b9c00d54511"
+  integrity sha512-R8LUSEay/68zE5c8/3BDxiTEvgb4xZTF0RKmAHfiEVN3klfIpXfi2/QCoiWPccVQ0J/ZGdz9OjzL4uJEP/MRAw==
+
+dom-scroll-into-view@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/dom-scroll-into-view/-/dom-scroll-into-view-2.0.1.tgz#0decc8522801fd8d3f1c6ba355a74d382c5f989b"
+  integrity sha512-bvVTQe1lfaUr1oFzZX80ce9KLDlZ3iU+XGNE/bz9HnGdklTieqsbmsLHe+rT2XWqopvL0PckkYqN7ksmm5pe3w==
+
 domexception@^4.0.0:
   version "4.0.0"
   resolved "http://npm.prdops.insentek.com:80/domexception/-/domexception-4.0.0.tgz"
@@ -2993,6 +3086,13 @@ entities@^4.4.0:
   version "4.5.0"
   resolved "http://npm.prdops.insentek.com:80/entities/-/entities-4.5.0.tgz"
   integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
+
+errno@^0.1.1:
+  version "0.1.8"
+  resolved "https://registry.npmmirror.com/errno/-/errno-0.1.8.tgz#8bb3e9c7d463be4976ff888f76b4809ebc2e811f"
+  integrity sha512-dJ6oBr5SQ1VSd9qkk7ByRgb/1SH4JZjCHSW/mr63/QcXO9zLVxvJ6Oy13nio03rxpSnVDDjFor75SjVeZWPW/A==
+  dependencies:
+    prr "~1.0.1"
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -3398,6 +3498,14 @@ fecha@^4.2.0:
   version "4.2.3"
   resolved "http://npm.prdops.insentek.com:80/fecha/-/fecha-4.2.3.tgz"
   integrity sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==
+
+fetch-npm@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.npmmirror.com/fetch-npm/-/fetch-npm-1.0.9.tgz#62ce30c8a07c994d8586d9010b0b4a72e086b060"
+  integrity sha512-kTqggDTcvyxk1lNO+Jjs+iakNfeN6pRlC+SV0XUYXhFajO4D3dkxyo86D0p8XF/JxjAKREbOHCq/+gSRc9UUkA==
+  dependencies:
+    jquery "^3.4.1"
+    node-fetch "^2.6.0"
 
 figures@^3.0.0:
   version "3.2.0"
@@ -3838,12 +3946,17 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@0.6.3:
+iconv-lite@0.6.3, iconv-lite@^0.6.3:
   version "0.6.3"
   resolved "http://npm.prdops.insentek.com:80/iconv-lite/-/iconv-lite-0.6.3.tgz"
   integrity sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=
   dependencies:
     safer-buffer ">= 2.1.2 < 3.0.0"
+
+idb@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.npmmirror.com/idb/-/idb-7.1.1.tgz#d910ded866d32c7ced9befc5bfdf36f572ced72b"
+  integrity sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==
 
 ignore@^4.0.6:
   version "4.0.6"
@@ -3854,6 +3967,11 @@ ignore@^5.1.1, ignore@^5.2.0:
   version "5.2.4"
   resolved "http://npm.prdops.insentek.com:80/ignore/-/ignore-5.2.4.tgz"
   integrity sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==
+
+image-size@~0.5.0:
+  version "0.5.5"
+  resolved "https://registry.npmmirror.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
+  integrity sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -4036,6 +4154,11 @@ is-plain-obj@^1.1.0:
   resolved "http://npm.prdops.insentek.com:80/is-plain-obj/-/is-plain-obj-1.1.0.tgz#71a50c8429dfca773c92a390a4a03b39fcd51d3e"
   integrity sha1-caUMhCnfync8kqOQpKA7OfzVHT4=
 
+is-plain-object@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.npmmirror.com/is-plain-object/-/is-plain-object-3.0.1.tgz#662d92d24c0aa4302407b0d45d21f2251c85f85b"
+  integrity sha512-Xnpx182SBMrr/aBik8y+GuR4U1L9FqMSojwDQwPMmxyC6bvEqly9UBCxhauBF5vNh2gwWJNX6oDV7O+OM4z34g==
+
 is-potential-custom-element-name@^1.0.1:
   version "1.0.1"
   resolved "http://npm.prdops.insentek.com:80/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.1.tgz"
@@ -4055,6 +4178,11 @@ is-typedarray@^1.0.0:
   version "1.0.0"
   resolved "http://npm.prdops.insentek.com:80/is-typedarray/-/is-typedarray-1.0.0.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
+
+is-what@^3.14.1:
+  version "3.14.1"
+  resolved "https://registry.npmmirror.com/is-what/-/is-what-3.14.1.tgz#e1222f46ddda85dead0fd1c9df131760e77755c1"
+  integrity sha512-sNxgpk9793nzSs7bA6JQJGeIuRBQhAaNGG77kzYQgMkrID+lS6SlK07K5LaptscDlSaIgH+GPFzf+d75FVxozA==
 
 is-yarn-global@^0.3.0:
   version "0.3.0"
@@ -4499,6 +4627,11 @@ joi@17.9.1:
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
+jquery@^3.4.1:
+  version "3.7.0"
+  resolved "https://registry.npmmirror.com/jquery/-/jquery-3.7.0.tgz#fe2c01a05da500709006d8790fe21c8a39d75612"
+  integrity sha512-umpJ0/k8X0MvD1ds0P9SfowREz2LenHsQaxSohMZ5OMNEU2r0tf8pdeEFTHMFxWVxKNyU9rTtK3CWzUCTKJUeQ==
+
 js-beautify@1.14.6:
   version "1.14.6"
   resolved "http://npm.prdops.insentek.com:80/js-beautify/-/js-beautify-1.14.6.tgz"
@@ -4519,7 +4652,7 @@ js-string-escape@^1.0.1:
   resolved "http://npm.prdops.insentek.com:80/js-string-escape/-/js-string-escape-1.0.1.tgz"
   integrity sha512-Smw4xcfIQ5LVjAOuJCvN/zIodzA/BBSsluuoSykP+lUvScIi4U6RJLfwHet5cxFnCswUjISV8oAXaqaJDY3chg==
 
-js-tokens@^4.0.0:
+"js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "http://npm.prdops.insentek.com:80/js-tokens/-/js-tokens-4.0.0.tgz"
   integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
@@ -4658,6 +4791,11 @@ kleur@^3.0.3:
   resolved "http://npm.prdops.insentek.com:80/kleur/-/kleur-3.0.3.tgz"
   integrity sha1-p5yezIbuHOP6YgbRIWxQHxR/wH4=
 
+klona@^2.0.4:
+  version "2.0.6"
+  resolved "https://registry.npmmirror.com/klona/-/klona-2.0.6.tgz#85bffbf819c03b2f53270412420a4555ef882e22"
+  integrity sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==
+
 koa-bodyparser@4.4.0:
   version "4.4.0"
   resolved "http://npm.prdops.insentek.com:80/koa-bodyparser/-/koa-bodyparser-4.4.0.tgz"
@@ -4767,6 +4905,30 @@ latest-version@^5.1.0:
   dependencies:
     package-json "^6.3.0"
 
+less-loader@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.npmmirror.com/less-loader/-/less-loader-11.1.0.tgz#a452384259bdf8e4f6d5fdcc39543609e6313f82"
+  integrity sha512-C+uDBV7kS7W5fJlUjq5mPBeBVhYpTIm5gB09APT9o3n/ILeaXVsiSFTbZpTJCJwQ/Crczfn3DmfQFwxYusWFug==
+  dependencies:
+    klona "^2.0.4"
+
+less@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.npmmirror.com/less/-/less-4.1.3.tgz#175be9ddcbf9b250173e0a00b4d6920a5b770246"
+  integrity sha512-w16Xk/Ta9Hhyei0Gpz9m7VS8F28nieJaL/VyShID7cYvP6IL5oHeL6p4TXSDJqZE/lNv0oJ2pGVjJsRkfwm5FA==
+  dependencies:
+    copy-anything "^2.0.1"
+    parse-node-version "^1.0.1"
+    tslib "^2.3.0"
+  optionalDependencies:
+    errno "^0.1.1"
+    graceful-fs "^4.1.2"
+    image-size "~0.5.0"
+    make-dir "^2.1.0"
+    mime "^1.4.1"
+    needle "^3.1.0"
+    source-map "~0.6.0"
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "http://npm.prdops.insentek.com:80/leven/-/leven-3.1.0.tgz"
@@ -4817,6 +4979,11 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash-es@^4.17.15:
+  version "4.17.21"
+  resolved "https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.memoize@4.x:
   version "4.1.2"
   resolved "http://npm.prdops.insentek.com:80/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
@@ -4848,6 +5015,13 @@ logform@^2.3.2, logform@^2.4.0:
     ms "^2.1.1"
     safe-stable-stringify "^2.3.1"
     triple-beam "^1.3.0"
+
+loose-envify@^1.0.0:
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
 
 loupe@^2.3.1, loupe@^2.3.6:
   version "2.3.6"
@@ -4901,6 +5075,14 @@ magic-string@^0.30.0:
   integrity sha512-LA+31JYDJLs82r2ScLrlz1GjSgu66ZV518eyWT+S8VhyQn/JL0u9MeBOvQMGYiPk1DBiSN9DDMOcXvigJZaViQ==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
+
+make-dir@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmmirror.com/make-dir/-/make-dir-2.1.0.tgz#5f0310e18b8be898cc07009295a30ae41e91e6f5"
+  integrity sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==
+  dependencies:
+    pify "^4.0.1"
+    semver "^5.6.0"
 
 make-dir@^3.0.0:
   version "3.1.0"
@@ -5016,6 +5198,11 @@ mime@2.6.0:
   version "2.6.0"
   resolved "http://npm.prdops.insentek.com:80/mime/-/mime-2.6.0.tgz"
   integrity sha1-oqaCqVzU0MsdYlfij4PafjWAA2c=
+
+mime@^1.4.1:
+  version "1.6.0"
+  resolved "https://registry.npmmirror.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
+  integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
 mimic-fn@^2.1.0:
   version "2.1.0"
@@ -5133,6 +5320,11 @@ nanoid@^3.3.6:
   resolved "http://npm.prdops.insentek.com:80/nanoid/-/nanoid-3.3.6.tgz"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
+nanopop@^2.1.0:
+  version "2.3.0"
+  resolved "https://registry.npmmirror.com/nanopop/-/nanopop-2.3.0.tgz#a5f672fba27d45d6ecbd0b59789c040072915123"
+  integrity sha512-fzN+T2K7/Ah25XU02MJkPZ5q4Tj5FpjmIYq4rvoHX4yb16HzFdCO6JxFFn5Y/oBhQ8no8fUZavnyIv9/+xkBBw==
+
 natural-compare-lite@^1.4.0:
   version "1.4.0"
   resolved "http://npm.prdops.insentek.com:80/natural-compare-lite/-/natural-compare-lite-1.4.0.tgz#17b09581988979fddafe0201e931ba933c96cbb4"
@@ -5147,6 +5339,15 @@ ncp@^2.0.0:
   version "2.0.0"
   resolved "http://npm.prdops.insentek.com:80/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
   integrity sha1-GVoh1sRuNh0vsSgbo4uR6d9727M=
+
+needle@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.npmmirror.com/needle/-/needle-3.2.0.tgz#07d240ebcabfd65c76c03afae7f6defe6469df44"
+  integrity sha512-oUvzXnyLiVyVGoianLijF9O/RecZUf7TkBfimjGrLM4eQhXyeJwM6GeAWccwfQ9aa4gMCZKqhAOuLaMIcQxajQ==
+  dependencies:
+    debug "^3.2.6"
+    iconv-lite "^0.6.3"
+    sax "^1.2.4"
 
 negotiator@0.6.3:
   version "0.6.3"
@@ -5403,6 +5604,11 @@ parse-json@^5.0.0, parse-json@^5.2.0:
     json-parse-even-better-errors "^2.3.0"
     lines-and-columns "^1.1.6"
 
+parse-node-version@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/parse-node-version/-/parse-node-version-1.0.1.tgz#e2b5dbede00e7fa9bc363607f53327e8b073189b"
+  integrity sha512-3YHlOa/JgH6Mnpr05jP9eDG254US9ek25LyIxZlDItp2iJtwyaXQb57lBYLdT3MowkUFYEV2XXNAYIPlESvJlA==
+
 parse5@^7.1.2:
   version "7.1.2"
   resolved "http://npm.prdops.insentek.com:80/parse5/-/parse5-7.1.2.tgz"
@@ -5479,6 +5685,11 @@ pify@^3.0.0:
   version "3.0.0"
   resolved "http://npm.prdops.insentek.com:80/pify/-/pify-3.0.0.tgz"
   integrity sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=
+
+pify@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmmirror.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
+  integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
 pinia@^2.0.35:
   version "2.0.36"
@@ -5583,6 +5794,11 @@ proto-list@~1.2.1:
   version "1.2.4"
   resolved "http://npm.prdops.insentek.com:80/proto-list/-/proto-list-1.2.4.tgz"
   integrity sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk=
+
+prr@~1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/prr/-/prr-1.0.1.tgz#d3fc114ba06995a45ec6893f484ceb1d78f5f476"
+  integrity sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==
 
 pseudomap@^1.0.2:
   version "1.0.2"
@@ -5779,6 +5995,11 @@ requires-port@^1.0.0:
   resolved "http://npm.prdops.insentek.com:80/requires-port/-/requires-port-1.0.0.tgz"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmmirror.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
+
 resolve-cwd@^3.0.0:
   version "3.0.0"
   resolved "http://npm.prdops.insentek.com:80/resolve-cwd/-/resolve-cwd-3.0.0.tgz"
@@ -5883,7 +6104,7 @@ safe-stable-stringify@^2.3.1:
   resolved "http://npm.prdops.insentek.com:80/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
 
-sax@>=0.6.0:
+sax@>=0.6.0, sax@^1.2.4:
   version "1.2.4"
   resolved "http://npm.prdops.insentek.com:80/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
@@ -5899,6 +6120,13 @@ scmp@^2.1.0:
   version "2.1.0"
   resolved "http://npm.prdops.insentek.com:80/scmp/-/scmp-2.1.0.tgz"
   integrity sha1-N7jhl8QlvetXCrkcw1azEaEfnJo=
+
+scroll-into-view-if-needed@^2.2.25:
+  version "2.2.31"
+  resolved "https://registry.npmmirror.com/scroll-into-view-if-needed/-/scroll-into-view-if-needed-2.2.31.tgz#d3c482959dc483e37962d1521254e3295d0d1587"
+  integrity sha512-dGCXy99wZQivjmjIqihaBQNjryrz5rueJY7eHfTdyWEiR4ttYpsajb14rn9s5d4DY4EcY6+4+U/maARBXJedkA==
+  dependencies:
+    compute-scroll-into-view "^1.0.20"
 
 semver-diff@^3.1.1:
   version "3.1.1"
@@ -5933,6 +6161,11 @@ setprototypeof@1.2.0:
   version "1.2.0"
   resolved "http://npm.prdops.insentek.com:80/setprototypeof/-/setprototypeof-1.2.0.tgz"
   integrity sha1-ZsmiSnP5/CjL5msJ/tPTPcrxtCQ=
+
+shallow-equal@^1.0.0:
+  version "1.2.1"
+  resolved "https://registry.npmmirror.com/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
+  integrity sha512-S4vJDjHHMBaiZuT9NPb616CSmLf618jawtv3sufLl6ivK8WocjAo58cXwbRV1cgqxH0Qbv+iUt6m05eqEa2IRA==
 
 shebang-command@^1.2.0:
   version "1.2.0"
@@ -6039,7 +6272,7 @@ source-map-support@^0.5.19:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
-source-map@^0.6.0, source-map@^0.6.1:
+source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0:
   version "0.6.1"
   resolved "http://npm.prdops.insentek.com:80/source-map/-/source-map-0.6.1.tgz"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=
@@ -6480,6 +6713,11 @@ tslib@^1.8.1, tslib@^1.9.0:
   resolved "http://npm.prdops.insentek.com:80/tslib/-/tslib-1.14.1.tgz"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
+tslib@^2.3.0:
+  version "2.5.0"
+  resolved "https://registry.npmmirror.com/tslib/-/tslib-2.5.0.tgz#42bfed86f5787aeb41d031866c8f402429e0fddf"
+  integrity sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==
+
 tsscmp@1.0.6:
   version "1.0.6"
   resolved "http://npm.prdops.insentek.com:80/tsscmp/-/tsscmp-1.0.6.tgz"
@@ -6747,6 +6985,13 @@ vue-router@^4.1.6:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
+vue-types@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.npmmirror.com/vue-types/-/vue-types-3.0.2.tgz#ec16e05d412c038262fc1efa4ceb9647e7fb601d"
+  integrity sha512-IwUC0Aq2zwaXqy74h4WCvFCUtoV0iSWr0snWnE9TnU18S66GAQyqQbRf2qfJtUuiFsBf6qp0MEwdonlwznlcrw==
+  dependencies:
+    is-plain-object "3.0.1"
+
 vue@^3.2.47:
   version "3.2.47"
   resolved "http://npm.prdops.insentek.com:80/vue/-/vue-3.2.47.tgz"
@@ -6757,6 +7002,11 @@ vue@^3.2.47:
     "@vue/runtime-dom" "3.2.47"
     "@vue/server-renderer" "3.2.47"
     "@vue/shared" "3.2.47"
+
+vuex@^3.0.1:
+  version "3.6.2"
+  resolved "https://registry.npmmirror.com/vuex/-/vuex-3.6.2.tgz#236bc086a870c3ae79946f107f16de59d5895e71"
+  integrity sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw==
 
 w3c-xmlserializer@^4.0.0:
   version "4.0.0"
@@ -6771,6 +7021,13 @@ walker@^1.0.8:
   integrity sha512-ts/8E8l5b7kY0vlWLewOkDXMmPdLcVV4GmOQLyxuSswIJsweeFZtAsMF7k1Nszz+TYBQrlYRmzOnr398y1JemQ==
   dependencies:
     makeerror "1.0.12"
+
+warning@^4.0.0:
+  version "4.0.3"
+  resolved "https://registry.npmmirror.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 webidl-conversions@^3.0.0:
   version "3.0.1"
