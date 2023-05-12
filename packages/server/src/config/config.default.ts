@@ -30,4 +30,30 @@ export default {
     codeDye: {
         matchQueryKey: 'dye',
     },
+    redis: {
+        client: {
+            port: 6379, // Redis port
+            host: '127.0.0.1', // Redis host
+            password: 'auth',
+            db: 0,
+        },
+    },
+    sequelize: {
+        dataSource: {
+            default: {
+                database: 'test4',
+                username: 'root',
+                password: '123456',
+                host: '127.0.0.1',
+                port: 3306,
+                encrypt: false,
+                dialect: 'mysql',
+                define: { charset: 'utf8' },
+                timezone: '+08:00',
+                entities: [],
+                // 本地的时候，可以通过 sync: true 直接 createTable
+                sync: false,
+            },
+        },
+    },
 } as MidwayConfig;

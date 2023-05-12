@@ -680,6 +680,11 @@
   resolved "http://npm.prdops.insentek.com:80/@humanwhocodes%2fobject-schema/-/object-schema-1.2.1.tgz"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@ioredis/commands@^1.1.1":
+  version "1.2.0"
+  resolved "http://npm.prdops.insentek.com:80/@ioredis%2fcommands/-/commands-1.2.0.tgz#6d61b3097470af1fdbbe622795b8921d42018e11"
+  integrity sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "http://npm.prdops.insentek.com:80/@istanbuljs%2fload-nyc-config/-/load-nyc-config-1.1.0.tgz"
@@ -1187,6 +1192,18 @@
     raw-body "2.5.2"
     supertest "6.3.3"
 
+"@midwayjs/redis@3":
+  version "3.11.6"
+  resolved "http://npm.prdops.insentek.com:80/@midwayjs%2fredis/-/redis-3.11.6.tgz#f5ccfc666a98017e6f6ef2843371137f21c5adf9"
+  integrity sha512-N2AeMldFcDmNPVjaYGpLxv2gRgFncuhqYKndllAsoCZ5/6Y6+Lfv7Nf5ia7E27BRhrGh8bQXfzTkDw0Uha9fWg==
+  dependencies:
+    ioredis "5.3.1"
+
+"@midwayjs/sequelize@3":
+  version "3.11.6"
+  resolved "http://npm.prdops.insentek.com:80/@midwayjs%2fsequelize/-/sequelize-3.11.6.tgz#b065c3e6e81ba4d4c43bada82b7de4484dd1c550"
+  integrity sha512-toxNldjRgSBPcfOnbrhj4wnSMMokx/B2SR9WHQnzV5YqmAglKWIrn5IhiF3amy6INrluOvCfX/OXFtFci6B/iA==
+
 "@midwayjs/serverless-spec-builder@^2.0.14":
   version "2.0.14"
   resolved "http://npm.prdops.insentek.com:80/@midwayjs%2fserverless-spec-builder/-/serverless-spec-builder-2.0.14.tgz"
@@ -1420,6 +1437,13 @@
     "@types/keygrip" "*"
     "@types/node" "*"
 
+"@types/debug@^4.1.7":
+  version "4.1.7"
+  resolved "http://npm.prdops.insentek.com:80/@types%2fdebug/-/debug-4.1.7.tgz#7cc0ea761509124709b8b2d1090d8f6c17aadb82"
+  integrity sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==
+  dependencies:
+    "@types/ms" "*"
+
 "@types/express-serve-static-core@^4.17.33":
   version "4.17.34"
   resolved "http://npm.prdops.insentek.com:80/@types%2fexpress-serve-static-core/-/express-serve-static-core-4.17.34.tgz"
@@ -1555,6 +1579,11 @@
   version "1.2.2"
   resolved "http://npm.prdops.insentek.com:80/@types%2fminimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
+
+"@types/ms@*":
+  version "0.7.31"
+  resolved "http://npm.prdops.insentek.com:80/@types%2fms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
+  integrity sha1-MbfKZAcSij0rvCf+LSGzRTl/YZc=
 
 "@types/node@*":
   version "20.1.1"
@@ -2485,6 +2514,11 @@ clone-response@^1.0.2:
   dependencies:
     mimic-response "^1.0.0"
 
+cluster-key-slot@^1.1.0:
+  version "1.1.2"
+  resolved "http://npm.prdops.insentek.com:80/cluster-key-slot/-/cluster-key-slot-1.1.2.tgz#88ddaa46906e303b5de30d3153b7d9fe0a0c19ac"
+  integrity sha512-RMr0FhtfXemyinomL4hrWcYJxmX6deFdCxpJzhDttxgO1+bcCnkk+9drydLVDmAMG7NE6aN/fl4F7ucU/90gAA==
+
 co-body@^6.0.0:
   version "6.1.0"
   resolved "http://npm.prdops.insentek.com:80/co-body/-/co-body-6.1.0.tgz"
@@ -2758,7 +2792,7 @@ dayjs@^1.10.7:
   resolved "http://npm.prdops.insentek.com:80/dayjs/-/dayjs-1.11.7.tgz"
   integrity sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==
 
-debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
+debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
   version "4.3.4"
   resolved "http://npm.prdops.insentek.com:80/debug/-/debug-4.3.4.tgz"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -2844,6 +2878,11 @@ delegates@^1.0.0:
   resolved "http://npm.prdops.insentek.com:80/delegates/-/delegates-1.0.0.tgz"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
 
+denque@^2.1.0:
+  version "2.1.0"
+  resolved "http://npm.prdops.insentek.com:80/denque/-/denque-2.1.0.tgz#e93e1a6569fb5e66f16a3c2a2964617d349d6ab1"
+  integrity sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==
+
 depd@2.0.0, depd@^2.0.0, depd@~2.0.0:
   version "2.0.0"
   resolved "http://npm.prdops.insentek.com:80/depd/-/depd-2.0.0.tgz"
@@ -2917,6 +2956,11 @@ dot-prop@^5.2.0:
   integrity sha1-kMzOcIzZzYLMTcjD3dmr3VWyDog=
   dependencies:
     is-obj "^2.0.0"
+
+dottie@^2.0.2:
+  version "2.0.3"
+  resolved "http://npm.prdops.insentek.com:80/dottie/-/dottie-2.0.3.tgz#797a4f4c92a9a65499806be4051b9d9dcd5a5d77"
+  integrity sha512-4liA0PuRkZWQFQjwBypdxPfZaRWiv5tkhMXY2hzsa2pNf5s7U3m9cwUchfNKe8wZQxdGPQQzO6Rm2uGe0rvohQ==
 
 duplexer3@^0.1.4:
   version "0.1.5"
@@ -3536,6 +3580,13 @@ functional-red-black-tree@^1.0.1:
   resolved "http://npm.prdops.insentek.com:80/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+generate-function@^2.3.1:
+  version "2.3.1"
+  resolved "http://npm.prdops.insentek.com:80/generate-function/-/generate-function-2.3.1.tgz#f069617690c10c868e73b8465746764f97c3479f"
+  integrity sha1-8GlhdpDBDIaOc7hGV0Z2T5fDR58=
+  dependencies:
+    is-property "^1.0.2"
+
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "http://npm.prdops.insentek.com:80/gensync/-/gensync-1.0.0-beta.2.tgz"
@@ -3597,6 +3648,18 @@ glob-parent@^6.0.2:
   integrity sha1-bSN9mQg5UMeSkPJMdkKj3poo+eM=
   dependencies:
     is-glob "^4.0.3"
+
+glob@7.2.0:
+  version "7.2.0"
+  resolved "http://npm.prdops.insentek.com:80/glob/-/glob-7.2.0.tgz#d15535af7732e02e948f4c41628bd910293f6023"
+  integrity sha1-0VU1r3cy4C6Uj0xBYovZECk/YCM=
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
 
 glob@^7.1.2, glob@^7.1.3, glob@^7.1.4:
   version "7.2.3"
@@ -3838,7 +3901,7 @@ iconv-lite@0.4.24, iconv-lite@^0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@0.6.3:
+iconv-lite@0.6.3, iconv-lite@^0.6.3:
   version "0.6.3"
   resolved "http://npm.prdops.insentek.com:80/iconv-lite/-/iconv-lite-0.6.3.tgz"
   integrity sha1-pS+AvzjaGVLrXGgXkHGYcaGnJQE=
@@ -3891,6 +3954,11 @@ inflation@^2.0.0:
   resolved "http://npm.prdops.insentek.com:80/inflation/-/inflation-2.0.0.tgz"
   integrity sha1-i0F+R8KPklpFEz2RTKH9OJEH8w8=
 
+inflection@^1.13.1:
+  version "1.13.4"
+  resolved "http://npm.prdops.insentek.com:80/inflection/-/inflection-1.13.4.tgz#65aa696c4e2da6225b148d7a154c449366633a32"
+  integrity sha512-6I/HUDeYFfuNCVS3td055BaXBwKYuzw7K3ExVMStBowKo9oOAMJIXIHvdyR3iboTCp1b+1i5DSkIZTcwIktuDw==
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "http://npm.prdops.insentek.com:80/inflight/-/inflight-1.0.6.tgz"
@@ -3932,6 +4000,21 @@ inquirer@^7.3.3:
     string-width "^4.1.0"
     strip-ansi "^6.0.0"
     through "^2.3.6"
+
+ioredis@5.3.1:
+  version "5.3.1"
+  resolved "http://npm.prdops.insentek.com:80/ioredis/-/ioredis-5.3.1.tgz#55d394a51258cee3af9e96c21c863b1a97bf951f"
+  integrity sha512-C+IBcMysM6v52pTLItYMeV4Hz7uriGtoJdz7SSBDX6u+zwSYGirLdQh3L7t/OItWITcw3gTFMjJReYUwS4zihg==
+  dependencies:
+    "@ioredis/commands" "^1.1.1"
+    cluster-key-slot "^1.1.0"
+    debug "^4.3.4"
+    denque "^2.1.0"
+    lodash.defaults "^4.2.0"
+    lodash.isarguments "^3.1.0"
+    redis-errors "^1.2.0"
+    redis-parser "^3.0.0"
+    standard-as-callback "^2.1.0"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -4040,6 +4123,11 @@ is-potential-custom-element-name@^1.0.1:
   version "1.0.1"
   resolved "http://npm.prdops.insentek.com:80/is-potential-custom-element-name/-/is-potential-custom-element-name-1.0.1.tgz"
   integrity sha1-Fx7W8Z46xVQ5Tt94yqBXhKRb67U=
+
+is-property@^1.0.2:
+  version "1.0.2"
+  resolved "http://npm.prdops.insentek.com:80/is-property/-/is-property-1.0.2.tgz#57fe1c4e48474edd65b09911f26b1cd4095dda84"
+  integrity sha1-V/4cTkhHTt1lsJkR8msc1Ald2oQ=
 
 is-stream@^1.1.0:
   version "1.1.0"
@@ -4817,6 +4905,16 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.defaults@^4.2.0:
+  version "4.2.0"
+  resolved "http://npm.prdops.insentek.com:80/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
+  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
+
+lodash.isarguments@^3.1.0:
+  version "3.1.0"
+  resolved "http://npm.prdops.insentek.com:80/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha512-chi4NHZlZqZD18a0imDHnZPrDeBbTtVN7GXMwuGdRH9qotxAjYs3aVLKc7zNOG9eddR5Ksd8rvFEBc9SsggPpg==
+
 lodash.memoize@4.x:
   version "4.1.2"
   resolved "http://npm.prdops.insentek.com:80/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
@@ -4848,6 +4946,11 @@ logform@^2.3.2, logform@^2.4.0:
     ms "^2.1.1"
     safe-stable-stringify "^2.3.1"
     triple-beam "^1.3.0"
+
+long@^5.2.1:
+  version "5.2.3"
+  resolved "http://npm.prdops.insentek.com:80/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
+  integrity sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==
 
 loupe@^2.3.1, loupe@^2.3.6:
   version "2.3.6"
@@ -4887,6 +4990,16 @@ lru-cache@^6.0.0:
   integrity sha1-bW/mVw69lqr5D8rR2vo7JWbbOpQ=
   dependencies:
     yallist "^4.0.0"
+
+lru-cache@^7.14.1:
+  version "7.18.3"
+  resolved "http://npm.prdops.insentek.com:80/lru-cache/-/lru-cache-7.18.3.tgz#f793896e0fd0e954a59dfdd82f0773808df6aa89"
+  integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
+
+lru-cache@^8.0.0:
+  version "8.0.5"
+  resolved "http://npm.prdops.insentek.com:80/lru-cache/-/lru-cache-8.0.5.tgz#983fe337f3e176667f8e567cfcce7cb064ea214e"
+  integrity sha512-MhWWlVnuab1RG5/zMRRcVGXZLCXrZTgfwMikgzCegsPnG62yDQo5JnqKkrK4jO5iKqDAZGItAqN5CtKBCBWRUA==
 
 magic-string@^0.25.7:
   version "0.25.9"
@@ -5082,6 +5195,18 @@ mod-info@^1.0.0:
   resolved "http://npm.prdops.insentek.com:80/mod-info/-/mod-info-1.0.2.tgz"
   integrity sha512-Z5FvCUYLg0OvZSg36Ltx0PjY3/LvSb+woTzDa1vSYcJ41ViaGC1nQnvnFLuziQgFvXCeH01X8eUFOsSt7/Q3Cg==
 
+moment-timezone@^0.5.34:
+  version "0.5.43"
+  resolved "http://npm.prdops.insentek.com:80/moment-timezone/-/moment-timezone-0.5.43.tgz#3dd7f3d0c67f78c23cd1906b9b2137a09b3c4790"
+  integrity sha512-72j3aNyuIsDxdF1i7CEgV2FfxM1r6aaqJyLB2vwb33mXYyoyLly+F1zbWqhA3/bVIoJ4szlUoMbUnVdid32NUQ==
+  dependencies:
+    moment "^2.29.4"
+
+moment@^2.29.1, moment@^2.29.4:
+  version "2.29.4"
+  resolved "http://npm.prdops.insentek.com:80/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
+
 ms@2.1.2:
   version "2.1.2"
   resolved "http://npm.prdops.insentek.com:80/ms/-/ms-2.1.2.tgz"
@@ -5119,6 +5244,20 @@ mwts@^1.0.5:
     update-notifier "^5.0.0"
     write-file-atomic "^3.0.3"
 
+mysql2@^3.3.1:
+  version "3.3.1"
+  resolved "http://npm.prdops.insentek.com:80/mysql2/-/mysql2-3.3.1.tgz#b7e055812adeb46d96bc65a5b37fa57e70bc0388"
+  integrity sha512-UD84/AvLwO5qmSABEsBTZ7y7JKv3sM8JzWGhuL4tDkJwVsClVVAcelNSR5Unyhxj6/KHBAkjS7qe5/c+gEmNvA==
+  dependencies:
+    denque "^2.1.0"
+    generate-function "^2.3.1"
+    iconv-lite "^0.6.3"
+    long "^5.2.1"
+    lru-cache "^8.0.0"
+    named-placeholders "^1.1.3"
+    seq-queue "^0.0.5"
+    sqlstring "^2.3.2"
+
 mz@^2.7.0:
   version "2.7.0"
   resolved "http://npm.prdops.insentek.com:80/mz/-/mz-2.7.0.tgz#95008057a56cafadc2bc63dde7f9ff6955948e32"
@@ -5127,6 +5266,13 @@ mz@^2.7.0:
     any-promise "^1.0.0"
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
+
+named-placeholders@^1.1.3:
+  version "1.1.3"
+  resolved "http://npm.prdops.insentek.com:80/named-placeholders/-/named-placeholders-1.1.3.tgz#df595799a36654da55dda6152ba7a137ad1d9351"
+  integrity sha512-eLoBxg6wE/rZkJPhU/xRX1WTpkFEwDJEN96oxFrTsqBdbT5ec295Q+CoHrL9IT0DipqKhmGcaZmwOt8OON5x1w==
+  dependencies:
+    lru-cache "^7.14.1"
 
 nanoid@^3.3.6:
   version "3.3.6"
@@ -5465,6 +5611,11 @@ pathval@^1.1.1:
   resolved "http://npm.prdops.insentek.com:80/pathval/-/pathval-1.1.1.tgz"
   integrity sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==
 
+pg-connection-string@^2.5.0:
+  version "2.5.0"
+  resolved "http://npm.prdops.insentek.com:80/pg-connection-string/-/pg-connection-string-2.5.0.tgz#538cadd0f7e603fc09a12590f3b8a452c2c0cf34"
+  integrity sha512-r5o/V/ORTA6TmUnyWZR9nCj1klXCO2CEKNRlVuJptZe85QuhFayC7WeMic7ndayT5IRIR0S0xFxFi2ousartlQ==
+
 picocolors@^1.0.0:
   version "1.0.0"
   resolved "http://npm.prdops.insentek.com:80/picocolors/-/picocolors-1.0.0.tgz"
@@ -5730,6 +5881,18 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
+redis-errors@^1.0.0, redis-errors@^1.2.0:
+  version "1.2.0"
+  resolved "http://npm.prdops.insentek.com:80/redis-errors/-/redis-errors-1.2.0.tgz#eb62d2adb15e4eaf4610c04afe1529384250abad"
+  integrity sha1-62LSrbFeTq9GEMBK/hUpOEJQq60=
+
+redis-parser@^3.0.0:
+  version "3.0.0"
+  resolved "http://npm.prdops.insentek.com:80/redis-parser/-/redis-parser-3.0.0.tgz#b66d828cdcafe6b4b8a428a7def4c6bcac31c8b4"
+  integrity sha1-tm2CjNyv5rS4pCin3vTGvKwxyLQ=
+  dependencies:
+    redis-errors "^1.0.0"
+
 reflect-metadata@0.1.13:
   version "0.1.13"
   resolved "http://npm.prdops.insentek.com:80/reflect-metadata/-/reflect-metadata-0.1.13.tgz"
@@ -5824,6 +5987,11 @@ restore-cursor@^3.1.0:
   dependencies:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
+
+retry-as-promised@^5.0.0:
+  version "5.0.0"
+  resolved "http://npm.prdops.insentek.com:80/retry-as-promised/-/retry-as-promised-5.0.0.tgz#f4ecc25133603a2d2a7aff4a128691d7bc506d54"
+  integrity sha512-6S+5LvtTl2ggBumk04hBo/4Uf6fRJUwIgunGZ7CYEBCeufGFW1Pu6ucUf/UskHeWOIsUcLOGLFXPig5tR5V1nA==
 
 reusify@^1.0.4:
   version "1.0.4"
@@ -5923,6 +6091,44 @@ semver@^6.0.0, semver@^6.1.0, semver@^6.2.0, semver@^6.3.0:
   version "6.3.0"
   resolved "http://npm.prdops.insentek.com:80/semver/-/semver-6.3.0.tgz"
   integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
+
+seq-queue@^0.0.5:
+  version "0.0.5"
+  resolved "http://npm.prdops.insentek.com:80/seq-queue/-/seq-queue-0.0.5.tgz#d56812e1c017a6e4e7c3e3a37a1da6d78dd3c93e"
+  integrity sha1-1WgS4cAXpuTnw+Ojeh2m143TyT4=
+
+sequelize-pool@^7.1.0:
+  version "7.1.0"
+  resolved "http://npm.prdops.insentek.com:80/sequelize-pool/-/sequelize-pool-7.1.0.tgz#210b391af4002762f823188fd6ecfc7413020768"
+  integrity sha1-IQs5GvQAJ2L4IxiP1uz8dBMCB2g=
+
+sequelize-typescript@^2.1.5:
+  version "2.1.5"
+  resolved "http://npm.prdops.insentek.com:80/sequelize-typescript/-/sequelize-typescript-2.1.5.tgz#f12d14607cc8abfd6172cd99f7d3255ec5c4d78e"
+  integrity sha512-x1CNODct8gJyfZPwEZBU5uVGNwgJI2Fda913ZxD5ZtCSRyTDPBTS/0uXciF+MlCpyqjpmoCAPtudQWzw579bzA==
+  dependencies:
+    glob "7.2.0"
+
+sequelize@^7.0.0-alpha.1:
+  version "7.0.0-alpha.1"
+  resolved "http://npm.prdops.insentek.com:80/sequelize/-/sequelize-7.0.0-alpha.1.tgz#586ad28c84e61e2dfe1d55d66e93c09a84432e3d"
+  integrity sha512-E2VORGQU5o/rnTWwJDUl2X8YX2AdEVXeduZYZKF0N/pUC/poeF36Q5gslKj48CC154/e0uAmVENctL1v2p0Zmw==
+  dependencies:
+    "@types/debug" "^4.1.7"
+    debug "^4.3.3"
+    dottie "^2.0.2"
+    inflection "^1.13.1"
+    lodash "^4.17.21"
+    moment "^2.29.1"
+    moment-timezone "^0.5.34"
+    pg-connection-string "^2.5.0"
+    retry-as-promised "^5.0.0"
+    semver "^7.3.5"
+    sequelize-pool "^7.1.0"
+    toposort-class "^1.0.1"
+    uuid "^8.3.2"
+    validator "^13.7.0"
+    wkx "^0.5.0"
 
 set-blocking@^2.0.0:
   version "2.0.0"
@@ -6092,6 +6298,11 @@ sprintf-js@~1.0.2:
   resolved "http://npm.prdops.insentek.com:80/sprintf-js/-/sprintf-js-1.0.3.tgz"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
+sqlstring@^2.3.2:
+  version "2.3.3"
+  resolved "http://npm.prdops.insentek.com:80/sqlstring/-/sqlstring-2.3.3.tgz#2ddc21f03bce2c387ed60680e739922c65751d0c"
+  integrity sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==
+
 stack-trace@0.0.x:
   version "0.0.10"
   resolved "http://npm.prdops.insentek.com:80/stack-trace/-/stack-trace-0.0.10.tgz"
@@ -6108,6 +6319,11 @@ stackback@0.0.2:
   version "0.0.2"
   resolved "http://npm.prdops.insentek.com:80/stackback/-/stackback-0.0.2.tgz"
   integrity sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==
+
+standard-as-callback@^2.1.0:
+  version "2.1.0"
+  resolved "http://npm.prdops.insentek.com:80/standard-as-callback/-/standard-as-callback-2.1.0.tgz#8953fc05359868a77b5b9739a665c5977bb7df45"
+  integrity sha1-iVP8BTWYaKd7W5c5pmXFl3u330U=
 
 statuses@2.0.1:
   version "2.0.1"
@@ -6395,6 +6611,11 @@ toidentifier@1.0.1:
   resolved "http://npm.prdops.insentek.com:80/toidentifier/-/toidentifier-1.0.1.tgz"
   integrity sha1-O+NDIaiKgg7RvYDfqjPkefu43TU=
 
+toposort-class@^1.0.1:
+  version "1.0.1"
+  resolved "http://npm.prdops.insentek.com:80/toposort-class/-/toposort-class-1.0.1.tgz#7ffd1f78c8be28c3ba45cd4e1a3f5ee193bd9988"
+  integrity sha1-f/0feMi+KMO6Rc1OGj9e4ZO9mYg=
+
 tough-cookie@^4.1.2:
   version "4.1.2"
   resolved "http://npm.prdops.insentek.com:80/tough-cookie/-/tough-cookie-4.1.2.tgz"
@@ -6636,6 +6857,11 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   resolved "http://npm.prdops.insentek.com:80/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "http://npm.prdops.insentek.com:80/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha1-gNW1ztJxu5r2xEXyGhoExgbO++I=
+
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
   resolved "http://npm.prdops.insentek.com:80/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz"
@@ -6662,6 +6888,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+validator@^13.7.0:
+  version "13.9.0"
+  resolved "http://npm.prdops.insentek.com:80/validator/-/validator-13.9.0.tgz#33e7b85b604f3bbce9bb1a05d5c3e22e1c2ff855"
+  integrity sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==
 
 vary@^1.1.2:
   version "1.1.2"
@@ -6874,6 +7105,13 @@ winston@^3.3.3:
     stack-trace "0.0.x"
     triple-beam "^1.3.0"
     winston-transport "^4.5.0"
+
+wkx@^0.5.0:
+  version "0.5.0"
+  resolved "http://npm.prdops.insentek.com:80/wkx/-/wkx-0.5.0.tgz#c6c37019acf40e517cc6b94657a25a3d4aa33e8c"
+  integrity sha1-xsNwGaz0DlF8xrlGV6JaPUqjPow=
+  dependencies:
+    "@types/node" "*"
 
 word-wrap@^1.2.3:
   version "1.2.3"
