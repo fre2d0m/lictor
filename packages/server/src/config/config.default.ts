@@ -27,4 +27,7 @@ export default {
         // 是否在执行报错的时候，把跨域的 header 信息写入到 error 对的 headers 属性中，【默认值】false
         keepHeadersOnError: true,
     },
+    codeDye: {
+        matchQueryKey: 'dye',
+    },
 } as MidwayConfig;

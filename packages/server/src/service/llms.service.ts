@@ -1,8 +1,9 @@
-import { Provide } from '@midwayjs/core';
+import { Provide, Scope, ScopeEnum } from '@midwayjs/core';
 import { IUserOptions } from '../interface';
 
 @Provide()
-export class UserService {
+@Scope(ScopeEnum.Singleton)
+export class LLMsService {
     async getUser(options: IUserOptions) {
         return {
             uid: options.uid,

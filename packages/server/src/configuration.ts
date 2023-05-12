@@ -12,6 +12,7 @@ import { AuthGuard } from './guard/auth.guard';
 import * as staticFile from '@midwayjs/static-file';
 import * as crossDomain from '@midwayjs/cross-domain';
 import * as ws from '@midwayjs/ws';
+import * as codeDye from '@midwayjs/code-dye';
 
 @Configuration({
     imports: [
@@ -22,6 +23,10 @@ import * as ws from '@midwayjs/ws';
         ws,
         {
             component: info,
+            enabledEnvironment: ['local'],
+        },
+        {
+            component: codeDye,
             enabledEnvironment: ['local'],
         },
     ],

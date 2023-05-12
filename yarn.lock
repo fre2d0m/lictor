@@ -1050,6 +1050,11 @@
     source-map-support "^0.5.19"
     ts-node "^10.0.0"
 
+"@midwayjs/code-dye@3":
+  version "3.11.6"
+  resolved "http://npm.prdops.insentek.com:80/@midwayjs%2fcode-dye/-/code-dye-3.11.6.tgz#f90b0f201e8a0275bff6011d4a9831ce92a3161c"
+  integrity sha512-0+rMFC/wxNpNFp3xWcmSHlC5Hra6ohgJP3Eo4bcE0Rp8tHVRwvivLwfoSSkJx8PKQiDgP/qPYbcudRKptBArJg==
+
 "@midwayjs/command-core@^2.0.14":
   version "2.0.14"
   resolved "http://npm.prdops.insentek.com:80/@midwayjs%2fcommand-core/-/command-core-2.0.14.tgz"

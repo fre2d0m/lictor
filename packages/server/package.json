@@ -8,6 +8,7 @@
     "@alicloud/openapi-client": "^0.4.6",
     "@alicloud/tea-util": "^1.4.5",
     "@midwayjs/bootstrap": "^3.0.0",
+    "@midwayjs/code-dye": "3",
     "@midwayjs/core": "^3.0.0",
     "@midwayjs/cross-domain": "^3.11.6",
     "@midwayjs/decorator": "^3.0.0",
