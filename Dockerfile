@@ -21,6 +21,8 @@ RUN cd packages/app && yarn build
 # 将构建好的前端静态文件移动到后端服务的 public 目录
 RUN mv packages/app/dist/* packages/server/src/public/
 
+RUN cd packages/server && yarn build
+
 FROM node:18.16.0-alpine3.17
 
 WORKDIR /app
