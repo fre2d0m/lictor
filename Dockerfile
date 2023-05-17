@@ -32,6 +32,7 @@ COPY --from=builder /app/packages/server/src ./src
 COPY --from=builder /app/packages/server/public ./public
 COPY --from=builder /app/packages/server/bootstrap.js ./
 COPY --from=builder /app/packages/server/package.json ./
+COPY --from=builder /app/yarn.lock ./
 
 RUN apk add --no-cache tzdata
 
