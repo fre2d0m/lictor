@@ -29,6 +29,7 @@ WORKDIR /app
 
 COPY --from=builder /app/packages/server/dist ./dist
 COPY --from=builder /app/packages/server/src ./src
+COPY --from=builder /app/packages/server/public ./public
 COPY --from=builder /app/packages/server/bootstrap.js ./
 COPY --from=builder /app/packages/server/package.json ./
 

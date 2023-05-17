@@ -4,3 +4,5 @@ Dockerfile
 .husky
 .github
 .vscode
+dist
+logs
