@@ -83,6 +83,7 @@ const handleRefresh = () => {
 				font-size: 14px;
 				line-height: 26px;
 				color: #FFFFFF;
+				min-height: 42px;
 
 				& > p {
 								margin-bottom: 0;
