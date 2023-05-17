@@ -19,7 +19,7 @@ RUN yarn install
 RUN cd packages/app && yarn build
 
 # 将构建好的前端静态文件移动到后端服务的 public 目录
-RUN mv packages/app/dist/* packages/server/src/public/
+RUN mv packages/app/dist/* packages/server/public/
 
 RUN cd packages/server && yarn build
 

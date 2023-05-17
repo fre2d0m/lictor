@@ -9,8 +9,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "dependencies":{
+    "sequelize-typescript": "2.1.5"
+  },
   "devDependencies": {
-      "concurrently": "^5.2.0", 
+      "concurrently": "^5.2.0",
     "wsrun": "^5.2.0"
   }
 }
