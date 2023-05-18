@@ -20,8 +20,13 @@ jobs:
                     username: ${{ secrets.DOCKER_HUB_USERNAME }}
                     password: ${{ secrets.DOCKER_HUB_SECRET }}
 
-            -   name: Build Docker image
-                run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/lictor:latest .
+            -   name: Set up Docker Buildx
+                uses: docker/setup-buildx-action@v2
 
-            -   name: Push Docker image
-                run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/lictor:latest
+            -   name: Build and push
+                uses: docker/build-push-action@v4
+                with:
+                    context: .
+                    file: ./Dockerfile
+                    push: true
+                    tags: ${{ secrets.DOCKERHUB_USERNAME }}/lictor:latest
