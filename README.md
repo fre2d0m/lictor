@@ -1,17 +1,15 @@
 # Lictor
-Lictor is a chatbot web application for teams to use and collaborate. It not only helps the team to prompt their expert system (based on Prompts), but also allows them to perform different events through the handler, built on the OpenAI API
 
-## Description
-A brief and informative paragraph about the project, its purpose, functionality and benefits.
+Lictor is a chatbot web application for teams to use and collaborate. It not only helps the team to prompt their expert
+system (based on Prompts), but also allows them to perform different events through the handler, built on the OpenAI API
 
-## Features
+## Features & Roadmap
 
-- Feature 1: A short description of the first feature.
-- Feature 2: A short description of the second feature.
-- Feature 3: A short description of the third feature.
+### MVP(Minimum available product) Stage
 
-## Roadmap
-Outline future features, improvements and updates planned for your project.
+- []: A short description of the first feature.
+- []: A short description of the second feature.
+- []: A short description of the third feature.
 
 ## What's New
 
@@ -21,26 +19,41 @@ Nothing in here yet.
 
 ### Deploy
 
-**Vercel**
-
-Host your own live version with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/insentek/lictor)
-
-
-
 **Docker**
+
+```shell
+# build
+docker build -t lictor:latest .
+
+# run
+docker run -d -p 7001:7001 \
+-e REDISPORT=[YOUR REDIS PORT] \
+-e REDISHOST=[YOUR REDIS HOST] \
+-e REDISPASSWORD=[YOUR REDIS PASSWORD] \
+-e MYSQLDATABASE=[YOUR REDIS DATABASE] \
+-e MYSQLUSER=[YOUR MYSQL USER] \
+-e MYSQLPASSWORD=[YOUR MYSQL PASSWORD] \
+-e MYSQLHOST=[YOUR MYSQL HOST] \
+-e MYSQLPORT=[YOUR MYSQL POST] \
+-e JWT_SECRET=[YOUR JWT SWCRET] \
+lictor
+```
 
 Provide detailed instructions on how to install the project on various platforms and environments.
 
 ### Running Locally
 
 ## Usage
-Detailed instructions on how to use your project. Include code examples, screenshots or animated GIFs to demonstrate functionality.
+
+Detailed instructions on how to use your project. Include code examples, screenshots or animated GIFs to demonstrate
+functionality.
+
 ## Configuration
+
 Explain any configuration options or environment variables required for the project.
 
 ## Contributing
+
 Explain how interested developers can contribute to your project. Include:
 
 - Guidelines for submitting pull requests
@@ -48,18 +61,23 @@ Explain how interested developers can contribute to your project. Include:
 - Instructions for setting up the development environment
 
 ## License
+
 Include the license for your project (e.g. MIT, GPL, etc.)
+
 ## Code of Conduct
+
 Include a link to your project's Code of Conduct.
+
 ## Support
+
 Provide information on how to get support or assistance with your project. Include:
 
 - Contact information (email, social media, etc.)
 - Bug reporting instructions
 - Feature request instructions
 
-
 ## Donation
+
 [Buy Me a Coffee](https://buymeacoffee.com/insentekrd)
 
 ## Acknowledgements
@@ -67,4 +85,5 @@ Provide information on how to get support or assistance with your project. Inclu
 ### Sponsor
 
 ### Contributor
+
 [Contributors](https://github.com/insentek/lictor/graphs/contributors)

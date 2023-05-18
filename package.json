@@ -1,19 +1,19 @@
 {
-  "name": "lictor",
-  "version": "1.0.0",
-  "license": "MIT",
-  "private": true,
-  "scripts": {
-    "start": "concurrently \"wsrun --parallel start\""
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies":{
-    "sequelize-typescript": "2.1.5"
-  },
-  "devDependencies": {
-      "concurrently": "^5.2.0",
-    "wsrun": "^5.2.0"
-  }
+    "name": "lictor",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "start": "concurrently \"wsrun --parallel start\""
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "dependencies": {
+        "sequelize-typescript": "2.1.5"
+    },
+    "devDependencies": {
+        "concurrently": "^5.2.0",
+        "wsrun": "^5.2.0"
+    }
 }

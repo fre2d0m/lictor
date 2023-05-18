@@ -2,7 +2,7 @@ import { LLMModel, Prompt } from '../interface';
 import { EventEmitter } from 'events';
 import { Configuration, OpenAIApi } from 'openai';
 import { ChatCompletionRequestMessage } from 'openai/dist/api';
-import ChatCompletionParser from '../utils/chat-streaming-completion-parser';
+import ChatCompletionParser from './chat-streaming-completion-parser';
 
 const model = 'gpt-3.5-turbo';
 export default (): LLMModel => {

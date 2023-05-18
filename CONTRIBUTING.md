@@ -46,8 +46,8 @@ pull request if necessary.
 To set up your local development environment, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Run `npm install` to install the project's dependencies.
-3. Run `npm run dev` to start the development server. Open your browser and navigate to `http://localhost:3000` to view
+2. Run `yarn install` to install the project's dependencies.
+3. Run `yarn start` to start the development server. Open your browser and navigate to `http://localhost:3000` to view
    the app.
 4. Make your changes, and test them locally.
 5. Run `npm test` to ensure that all tests pass before submitting your changes.

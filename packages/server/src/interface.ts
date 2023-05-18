@@ -41,10 +41,22 @@ export interface SmsValidation {
 }
 
 export interface Configuration {
+    /**
+     * The name is used to identify the configuration
+     */
     name: string;
+    /**
+     * The label is displayed in the UI
+     */
     label: string;
     description?: string;
+    /**
+     * The default value when the configuration is not set
+     */
     defaultValue?: any;
+    /**
+     * If the configuration is sensitive, it will be hidden in the UI
+     */
     sensitive?: boolean;
 }
 
@@ -58,7 +70,7 @@ export type Prompt = {
  * Plugin service process:
  *  Publish plugin info to conversation --> Received User Inputs --> Prepare Prompts
  *  --> Invoke LLM and Wait for Completion --> Handle Completion (
- *      - Directly output to conversation
+ *      - Directly output to conversation (realized)
  *      - Schedule a task to process the completion and then output to conversation
  *      - Examine the completion use other plugin and then output to conversation
  *  ) --> Publish Completion --> End
@@ -89,18 +101,20 @@ export interface Plugin {
      */
     description: string;
     /**
-     * Depends on what kind of language model
+     * Depends on the type of language model.
      */
     dependsOn: 'text-to-text' | 'text-to-image';
     /**
-     * Prepare prompts according to the user input
-     * @param userInput
+     * Prepare prompts according to the user input.
+     * @param userInput - User input prompts.
+     * @returns Prepared prompts.
      */
     preparePrompts: (userInput: Prompt[]) => Prompt[];
     /**
-     * The plug-in can decide, depending on its characteristics, whether to output directly or buffer it for separate processing
-     * @param completions parsed plain text of streaming response
-     * @param agent
+     * The plugin can decide, depending on its characteristics, whether to output directly or buffer it for separate processing.
+     * @param completions - Parsed plain text of the streaming response.
+     * @param agent - Plugin agent.
+     * @returns A promise that resolves when handling completion is finished.
      */
     handleCompletion: (completions: string, agent: PluginAgent) => Promise<void>;
 }

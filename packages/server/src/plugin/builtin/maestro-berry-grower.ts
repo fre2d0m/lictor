@@ -23,7 +23,9 @@ export default (): Plugin => {
         },
         async handleCompletion(completions: string, agent: PluginAgent) {
             if (completions) {
-                // agent.waitFor();
+                // TODO Wait for completely completion
+                // TODO Schedule a task to process the completion and then output to conversation
+                // TODO Invoke other plugin and then output to conversation
                 agent.send(completions);
             }
         },

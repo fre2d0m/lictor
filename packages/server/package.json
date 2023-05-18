@@ -1,69 +1,69 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "private": true,
-  "dependencies": {
-    "@alicloud/dysmsapi20170525": "2.0.23",
-    "@alicloud/openapi-client": "^0.4.6",
-    "@alicloud/tea-util": "^1.4.5",
-    "@midwayjs/bootstrap": "^3.0.0",
-    "@midwayjs/captcha": "3",
-    "@midwayjs/code-dye": "3",
-    "@midwayjs/core": "^3.0.0",
-    "@midwayjs/cross-domain": "^3.11.6",
-    "@midwayjs/decorator": "^3.0.0",
-    "@midwayjs/info": "^3.0.0",
-    "@midwayjs/jwt": "3",
-    "@midwayjs/koa": "^3.0.0",
-    "@midwayjs/logger": "^2.14.0",
-    "@midwayjs/redis": "3",
-    "@midwayjs/sequelize": "3",
-    "@midwayjs/static-file": "3",
-    "@midwayjs/validate": "^3.11.6",
-    "@midwayjs/ws": "3",
-    "minimatch": "^9.0.0",
-    "mysql2": "^3.3.1",
-    "nanoid": "3",
-    "openai": "^3.2.1",
-    "sequelize": "6.31.0",
-    "sequelize-typescript": "2.1.5",
-    "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "@midwayjs/cli": "^2.0.0",
-    "@midwayjs/mock": "^3.0.0",
-    "@types/jest": "^29.2.0",
-    "@types/koa": "^2.13.4",
-    "@types/node": "18.11.0",
-    "@types/ws": "^8.5.4",
-    "cross-env": "^6.0.0",
-    "jest": "^29.2.2",
-    "mwts": "^1.0.5",
-    "ts-jest": "^29.0.3",
-    "typescript": "~4.8.0"
-  },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "scripts": {
-    "serve": "NODE_ENV=production node ./bootstrap.js",
-    "start": "cross-env NODE_ENV=local midway-bin dev --ts",
-    "test": "midway-bin test --ts",
-    "cov": "midway-bin cov --ts",
-    "lint": "mwts check",
-    "lint:fix": "mwts fix",
-    "ci": "npm run cov",
-    "build": "midway-bin build -c"
-  },
-  "midway-bin-clean": [
-    ".vscode/.tsbuildinfo",
-    "dist"
-  ],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "author": "",
-  "license": "MIT"
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "dependencies": {
+        "@alicloud/dysmsapi20170525": "2.0.23",
+        "@alicloud/openapi-client": "^0.4.6",
+        "@alicloud/tea-util": "^1.4.5",
+        "@midwayjs/bootstrap": "^3.0.0",
+        "@midwayjs/captcha": "3",
+        "@midwayjs/code-dye": "3",
+        "@midwayjs/core": "^3.0.0",
+        "@midwayjs/cross-domain": "^3.11.6",
+        "@midwayjs/decorator": "^3.0.0",
+        "@midwayjs/info": "^3.0.0",
+        "@midwayjs/jwt": "3",
+        "@midwayjs/koa": "^3.0.0",
+        "@midwayjs/logger": "^2.14.0",
+        "@midwayjs/redis": "3",
+        "@midwayjs/sequelize": "3",
+        "@midwayjs/static-file": "3",
+        "@midwayjs/validate": "^3.11.6",
+        "@midwayjs/ws": "3",
+        "minimatch": "^9.0.0",
+        "mysql2": "^3.3.1",
+        "nanoid": "3.1.31",
+        "openai": "^3.2.1",
+        "sequelize": "6.31.0",
+        "sequelize-typescript": "2.1.5",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@midwayjs/cli": "^2.0.0",
+        "@midwayjs/mock": "^3.0.0",
+        "@types/jest": "^29.2.0",
+        "@types/koa": "^2.13.4",
+        "@types/node": "18.11.0",
+        "@types/ws": "^8.5.4",
+        "cross-env": "^6.0.0",
+        "jest": "^29.2.2",
+        "mwts": "^1.0.5",
+        "ts-jest": "^29.0.3",
+        "typescript": "~4.8.0"
+    },
+    "engines": {
+        "node": ">=12.0.0"
+    },
+    "scripts": {
+        "serve": "NODE_ENV=production node ./bootstrap.js",
+        "start": "cross-env NODE_ENV=local midway-bin dev --ts",
+        "test": "midway-bin test --ts",
+        "cov": "midway-bin cov --ts",
+        "lint": "mwts check",
+        "lint:fix": "mwts fix",
+        "ci": "npm run cov",
+        "build": "midway-bin build -c"
+    },
+    "midway-bin-clean": [
+        ".vscode/.tsbuildinfo",
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "MIT"
 }
